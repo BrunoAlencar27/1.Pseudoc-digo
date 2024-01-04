@@ -1,0 +1,20 @@
+algoritmo "ParouImpar"
+//Descrição:Algoritmo simples queaplica os conceitos de procedimento para verificar a  paridade de um número digitado pelo o usuário.
+//Autor:Bruno Alencar Alves 
+//Data:03/01/24
+
+var
+   n:inteiro
+procedimento parouimpar(v:inteiro)//procedimento para verificar a paridade de um número
+inicio
+   se (v%2=0) então
+      Escreva("Esse número é par")
+   senão
+      Escreva("Esse número é impar")
+   fimse
+fimprocedimento
+inicio
+   Escreva("Digite um número:")//usuário digita um número
+   leia(n)
+   parouimpar(n)//chamada do procedimento e passagem de parâmetro por refência
+fimalgoritmo
